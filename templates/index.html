@@ -1,0 +1,189 @@
+    {% extends "base.html" %}
+
+    {% block title %} MajesticSoul Photography - New Port Richey, FL {% endblock %}
+    
+    {% block content %}
+<body>
+
+<!-- Carousel wrapper -->
+<div id="carouselMaterialStyle" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+  
+    <!-- Inner -->
+    <div class="carousel-inner rounded-5 shadow-4-strong">
+      <!-- Single item -->
+      <div class="carousel-item active">
+        <img src="/static/img/slideshow/img1.jpg" class="d-block w-100"
+          alt="Sunset Over the water" />
+      </div>
+  
+      <!-- Single item -->
+      <div class="carousel-item">
+        <img src="/static/img/slideshow/img2.jpg" class="d-block w-100"
+          alt="Canyon at Nigh" />
+      </div>
+  
+      <!-- Single item -->
+      <div class="carousel-item">
+        <img src="/static/img/slideshow/img3.jpg" class="d-block w-100"
+          alt="Cliff Above a Stormy Sea" />
+      </div>
+    </div>
+    <!-- Inner -->
+  
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <br>
+  <!-- Carousel wrapper -->
+
+  <!--Start Quote-->
+  <div class="text-center p-3" style="background-color: rgb(255, 255, 255);">
+    ~Don’t just settle for a pretty picture, make it majestic!~
+  </div>
+  <!--End Quote-->
+<br>
+  <!--About layout-->
+  <div class="card mb-3" style=" ">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img
+          src="/static/img/rachelleheadshot.jpg"
+          alt="Trendy Pants and Shoes"
+          class="img-fluid rounded-start"
+        />
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Ra’chelle Redding</h5>
+          <p>Owner/Operator</p>
+          <p class="card-text">
+            Hello Friends!  I’m Ra’chelle and I am very passionate about my job as your photographer and I strive to treat each and every session as its own unique experience.  I like to have a one on one consultation with each of my clients so that together we can come up with a vision for your session, bring it to life, and capture it in the most organic and majestic way, to be cherished for years to come.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End About layout-->
+  <br>
+  <!--Start Services Section-->
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card">
+        <a href="{{url_for('tinyhumans') }}" style="text-decoration: none; color: inherit;">
+          <img src="/static/img/tinyhumans/11.jpg" class="card-img-top" alt="baby wrapped in blanket in basket"/>
+          <div class="card-body">
+            <h5 class="card-title">Tiny Humans</h5>
+            <p class="card-text">
+              Maternity, Births, Newborns, Babies
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp" class="card-img-top" alt="Palm Springs Road"/>
+        <div class="card-body">
+          <h5 class="card-title">Family Ties</h5>
+          <p class="card-text">
+            Kiddos, Pets, Parents, Siblings, Grands, FAMILY.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp" class="card-img-top" alt="Los Angeles Skyscrapers"/>
+        <div class="card-body">
+          <h5 class="card-title">MileStones</h5>
+          <p class="card-text">Graduates, Milestone Birthdays, Life Events</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp" class="card-img-top" alt="Skyscrapers"/>
+        <div class="card-body">
+          <h5 class="card-title">Love & Stuff</h5>
+          <p class="card-text">
+            Couples, Proposals, Engagements, Anniversaries
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+        <div class="card">
+          <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp" class="card-img-top" alt="Skyscrapers"/>
+          <div class="card-body">
+            <h5 class="card-title">YOUniques</h5>
+            <p class="card-text">
+                Intimates, Head Shots, Models, Themed Sessions & more
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp" class="card-img-top" alt="Skyscrapers"/>
+          <div class="card-body">
+            <h5 class="card-title">Other Stuff</h5>
+            <p class="card-text">
+                Events, Branding, Pets, Fine Art & more
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp" class="card-img-top" alt="Skyscrapers"/>
+          <div class="card-body">
+            <h5 class="card-title">Weddings</h5>
+            <p class="card-text">
+                All Things Wedding
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp" class="card-img-top" alt="Skyscrapers"/>
+          <div class="card-body">
+            <h5 class="card-title">Holidays & Seasons</h5>
+            <p class="card-text">
+                Christmas, Spring & more
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp" class="card-img-top" alt="Skyscrapers"/>
+          <div class="card-body">
+            <h5 class="card-title">Commercial</h5>
+            <p class="card-text">
+                Product, venu(s), etc.
+            </p>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!--End Services Section-->
+
+
+    {% endblock %}
+

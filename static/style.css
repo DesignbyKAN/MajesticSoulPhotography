@@ -1,0 +1,234 @@
+/*------------------------------------------------------------------
+Majesticsoul Photography 
+Version: 1.0.0;
+Author: DesignbyKAN
+Copyright: DesignbyKAN
+
+[Table of contents]
+
+1. Typography
+2. Navigation
+3. SlideShow
+
+
+2. Background Color & Color Classes
+3. Section Padding
+4. Header Styling
+5. Header Logo
+6. Header Navigation
+7. Header Buttons, Dropdowns & Icons
+8. Auxiliary Navigation
+9. Title Areas
+10. Slider & Parallax
+11. Lightbox
+12. Plugin Preloader
+13. Rollovers
+14. Homepage
+15. About Pages
+16. Contact Pages
+17. Project Pages
+18. Pagination
+19. Fullscreen Pages
+20. Blog Pages
+21. Form Elements
+22. Social Lists
+23. Footer
+24. Sidebar
+25. Dividers
+26. Media Element Player
+27. E-Commerce
+28. Component Styling
+29. Resolution Media Queries
+
+
+
+
+--------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[1. Typography]
+*/
+
+@font-face {
+  font-family: "fashionfetish";
+  src: url(/static/font/fashionfetish/FashionFetishRegular.ttf);
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "fashionfetish";
+}
+
+h1 {
+  font-size: 4.381rem;
+}
+h2 {
+  font-size: 3.294rem;
+}
+h3 {
+  font-size: 2.476rem;
+}
+h4 {
+  font-size: 1.862rem;
+}
+h5 {
+  font-size: 1.4rem;
+}
+h6 {
+  font-size: 1.053rem;
+}
+
+body {
+    margin: 0;
+  }
+--------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[2. Navigation]
+*/
+
+
+
+
+/*----------------------------------------------------------------
+[2.1] Mobile Navigation
+
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: #b0980e;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #c1b67a ;
+    color: black;
+  }
+
+  .topnav a.icon a:hover {
+    background-color: #c1b67a ;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: white;
+    color: white;
+  }
+
+/*------------------------------------------------------------------
+[3. Slideshow]
+*/
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
