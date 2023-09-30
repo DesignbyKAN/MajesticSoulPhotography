@@ -10,9 +10,15 @@
     <link rel="stylesheet" href="/static/style.css" />
     <link rel="stylesheet" href="/static/css/mdb.min.css.map" />
     <link rel="stylesheet" href="/static/css/mdb.min.css"/>
-    <link rel=" 'icon" type="image/x-icon" href="/static/img/logo/MLogo.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link rel=" 'icon" type="image/x-icon" href="/static/img/favicon.jpg" />
     <!-- MDB icon -->
-    <link rel="icon" href="/static/img/logo/MLogo.jpgpython" type="image/x-icon" />
+    <link rel="icon" href="/static/img/favicon.jpg" type="image/x-icon" />
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -52,10 +58,10 @@
             <!-- Left links -->
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{{url_for('index') }}"">Home</a>
+                <a class="nav-link active" aria-current="page" href="{{url_for('index') }}">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{url_for('about') }}"">About</a>
+                <a class="nav-link" href="{{url_for('about') }}">About</a>
               </li>
               <!-- Navbar dropdown -->
               <li class="nav-item dropdown">
@@ -99,7 +105,7 @@
                  <!--End Dropdown menu -->
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{url_for('index') }}"><img src="/static/img/logo/MSPLOGO.png"></a>
+                <a class="nav-link" href="{{url_for('index') }}"><img src="/static/img/MSPLOGO-(3).png"></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{{url_for('contact') }}">Contact</a>
@@ -111,8 +117,10 @@
             </ul>
             <!-- Left links -->
           </div>
+          <div>
           <i class="fa-brands fa-cc-paypal fa-2xl" style="color: #2c71e8;"></i>
-          <i class="fa-brands fa-square-facebook fa-2xl" style="color: #2c71e8;"></i>
+          <i class="fa-brands fa-facebook"></i>
+        </div>
           </div>
         <!-- Container wrapper -->
       </nav>

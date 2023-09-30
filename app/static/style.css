@@ -61,6 +61,10 @@ body {
   margin: 0;
 }
 
+.cursive {
+  font-family: 'Dancing Script', cursive;
+}
+
 h1 {
   font-size: 4.381rem;
 }

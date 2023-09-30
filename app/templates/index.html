@@ -6,7 +6,7 @@
 <body>
 
 <!-- Carousel wrapper -->
-<div id="carouselMaterialStyle" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+<div id="carouselMaterialStyle" class="carousel slide carousel-fade container-fluid m-2" data-mdb-ride="carousel">
     <!-- Indicators -->
     <div class="carousel-indicators">
       <button type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide-to="0" class="active" aria-current="true"
@@ -19,19 +19,19 @@
     <div class="carousel-inner rounded-5 shadow-4-strong">
       <!-- Single item -->
       <div class="carousel-item active">
-        <img src="/static/img/slideshow/img1.jpg" class="d-block w-100"
+        <img src="/static/img/mainCovers/mainCover1.jpg" class="d-block w-100"
           alt="Sunset Over the water" />
       </div>
   
       <!-- Single item -->
       <div class="carousel-item">
-        <img src="/static/img/slideshow/img2.jpg" class="d-block w-100"
+        <img src="/static/img/mainCovers/mainCover2.jpg" class="d-block w-100"
           alt="Canyon at Nigh" />
       </div>
   
       <!-- Single item -->
       <div class="carousel-item">
-        <img src="/static/img/slideshow/img3.jpg" class="d-block w-100"
+        <img src="/static/img/mainCovers/mainCover3.jpg" class="d-block w-100"
           alt="Cliff Above a Stormy Sea" />
       </div>
     </div>
@@ -51,19 +51,19 @@
   <!-- Carousel wrapper -->
 
   <!--Start Quote-->
-  <div class="text-center p-3" style="background-color: rgb(255, 255, 255);">
-    ~Don’t just settle for a pretty picture, make it majestic!~
+  <div class="text-center p-3" style="background-color: rgb(255, 255, 255);"> 
+    <h1 class="fst-italic cursive">~Don’t just settle for a pretty picture, make it majestic!~</h1>
   </div>
   <!--End Quote-->
 <br>
   <!--About layout-->
-  <div class="card mb-3" style=" ">
+  <div class="card mb-3 container" style=" ">
     <div class="row g-0">
       <div class="col-md-4">
         <img
           src="/static/img/rachelleheadshot.jpg"
           alt="Trendy Pants and Shoes"
-          class="img-fluid rounded-start"
+          class="img-fluid rounded-start "
         />
       </div>
       <div class="col-md-8">
@@ -80,11 +80,14 @@
   <!--End About layout-->
   <br>
   <!--Start Services Section-->
+  <div>
+    <h1 class="cursive text-center">Check out some recent work</h1>
+  </div>
   <div class="row row-cols-1 row-cols-md-3 g-4">
     <div class="col">
       <div class="card">
         <a href="{{url_for('tinyhumans') }}" style="text-decoration: none; color: inherit;">
-          <img src="/static/img/tinyhumans/11.jpg" class="card-img-top" alt="baby wrapped in blanket in basket"/>
+          <img src="/static/img/xTinyHumans/cover.jpg" class="card-img-top" alt="baby wrapped in blanket in basket"/>
           <div class="card-body">
             <h5 class="card-title">Tiny Humans</h5>
             <p class="card-text">
@@ -96,7 +99,7 @@
     </div>
     <div class="col">
       <div class="card">
-        <img src="/static/img/slideshow/img2.jpg" class="card-img-top" alt="Palm Springs Road"/>
+        <img src="/static/img/xFamilyTies/familyTiesCOVER.jpg" class="card-img-top" alt="Palm Springs Road"/>
         <div class="card-body">
           <h5 class="card-title">Family Ties</h5>
           <p class="card-text">
@@ -107,7 +110,7 @@
     </div>
     <div class="col">
       <div class="card">
-        <img src="/static/img/milestones/dsc_0188.jpg" class="card-img-top" alt="Los Angeles Skyscrapers"/>
+        <img src="/static/img/xMilestones/cover.jpg" class="card-img-top" alt="Los Angeles Skyscrapers"/>
         <div class="card-body">
           <h5 class="card-title">MileStones</h5>
           <p class="card-text">Graduates, Milestone Birthdays, Life Events</p>
@@ -116,7 +119,7 @@
     </div>
     <div class="col">
       <div class="card">
-        <img src="/static/img/lovestuff/dsc_0202.jpg" class="card-img-top" alt="Skyscrapers"/>
+        <img src="/static/img/xLove&Stuff/COVER.jpg" class="card-img-top" alt="Skyscrapers"/>
         <div class="card-body">
           <h5 class="card-title">Love & Stuff</h5>
           <p class="card-text">
@@ -127,7 +130,7 @@
     </div>
     <div class="col">
         <div class="card">
-          <img src="/static/img/youniques/dsc_0321.jpg" class="card-img-top" alt="Skyscrapers"/>
+          <img src="/static/img/xYOUniques/cover.jpg" class="card-img-top" alt="Skyscrapers"/>
           <div class="card-body">
             <h5 class="card-title">YOUniques</h5>
             <p class="card-text">
@@ -138,9 +141,9 @@
       </div>
       <div class="col">
         <div class="card">
-          <img src="static/img/otherstuff/dsc_10116.jpg" class="card-img-top" alt="Skyscrapers"/>
+          <img src="/static/img/xMaternity/COVER.jpg" class="card-img-top" alt="Skyscrapers"/>
           <div class="card-body">
-            <h5 class="card-title">Other Stuff</h5>
+            <h5 class="card-title">Maternity</h5>
             <p class="card-text">
                 Events, Branding, Pets, Fine Art & more
             </p>
@@ -149,7 +152,7 @@
       </div>
       <div class="col">
         <div class="card">
-          <img src="static/img/weddings/dsc_0359.jpg" class="card-img-top" alt="Skyscrapers"/>
+          <img src="/static/img/xWeddings/cover.jpg" class="card-img-top" alt="Skyscrapers"/>
           <div class="card-body">
             <h5 class="card-title">Weddings</h5>
             <p class="card-text">
@@ -160,7 +163,7 @@
       </div>
       <div class="col">
         <div class="card">
-          <img src="static/img/holidays/dsc_0191.jpg" class="card-img-top" alt="Skyscrapers"/>
+          <img src="/static/img/xHolidaySeasons/holidaySeasonscover.jpg" class="card-img-top" alt="Skyscrapers"/>
           <div class="card-body">
             <h5 class="card-title">Holidays & Seasons</h5>
             <p class="card-text">
@@ -171,9 +174,17 @@
       </div>
       <div class="col">
         <div class="card">
-          <img src="static/img/commercial/commercial1.jpg" class="card-img-top" alt="Skyscrapers"/>
+          <img src="/static/img/xIntimates/intimatescover.jpg" class="card-img-top" alt="Skyscrapers"/>
+          <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.80)">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <p class="text-white mb-0">Sensative Content</p>
+            </div>
+          </div>
+          <div class="hover-overlay">
+            <div class="mask" style="background-color: hsla(0, 0%,98%, 0.2)"></div>
+          </div>
           <div class="card-body">
-            <h5 class="card-title">Commercial</h5>
+            <h5 class="card-title">Intimates</h5>
             <p class="card-text">
                 Product, venu(s), etc.
             </p>
