@@ -34,7 +34,7 @@
     {% block header %}{% endblock %}
   </head>
 <nav>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <!-- Container wrapper -->
         <div class="container-fluid">
           <!-- Toggle button -->
@@ -99,7 +99,7 @@
                     <a class="dropdown-item" href="{{url_for('weddings') }}">Weddings</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="{{url_for('holidayseasons') }}">Holidays & Seasons</a>
+                    <a class="dropdown-item" href="{{url_for('holidaysseasons') }}">Holidays & Seasons</a>
                   </li>
                 </ul>
                  <!--End Dropdown menu -->
@@ -117,10 +117,6 @@
             </ul>
             <!-- Left links -->
           </div>
-          <div>
-          <i class="fa-brands fa-cc-paypal fa-2xl" style="color: #2c71e8;"></i>
-          <i class="fa-brands fa-facebook"></i>
-        </div>
           </div>
         <!-- Container wrapper -->
       </nav>
@@ -133,31 +129,12 @@
 <!--Start Footer Section-->
 
 <!-- Footer -->
+<br>
+<div>
+  <hr class="hr hr-blurry" />
+</div>
+<br>
 <footer class="text-center text-lg-start bg-light text-muted">
-  <!-- Section: Social media -->
-  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-    <!-- Left -->
-    <div class="me-5 d-none d-lg-block">
-      <span>Get connected with us on social networks:</span>
-    </div>
-    <!-- Left -->
-
-    <!-- Right -->
-    <div>
-      <a href="https://www.facebook.com/majesticsoulphotography" class="me-4 text-reset">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-instagram"></i>
-      </a>
-    </div>
-    <!-- Right -->
-  </section>
-  <!-- Section: Social media -->
-
   <!-- Section: Links  -->
   <section class="">
     <div class="container text-center text-md-start mt-5">
@@ -169,6 +146,15 @@
           <h6 class="fw-bold mb-4">
             <i class="fa-solid fa-camera me-3"></i>MajesticSoul Photography
           </h6>
+          <a href="https://www.facebook.com/majesticsoulphotography" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
         </div>
         <!-- Grid column -->
 
@@ -235,7 +221,7 @@
   <!-- Copyright -->
   <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
     © 2023 Copyright:
-    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Majesticsoul Photography LLC</a>
+    <a class="text-reset fw-bold">Majesticsoul Photography LLC</a>
   </div>
   <!-- Copyright -->
 </footer>

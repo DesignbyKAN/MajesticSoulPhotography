@@ -1,34 +1,39 @@
-    {% extends "base.html" %}
+ {% extends "base.html" %}
 
-    {% block title %} MajesticSoul Photography - New Port Richey, FL {% endblock %}
-    
-    {% block content %}
+{% block title %} MajesticSoul Photography - New Port Richey, FL {% endblock %}
+
+{% block content %}
 <body>
 
-<!-- Carousel wrapper -->
-<div id="carouselMaterialStyle" class="carousel slide carousel-fade container-fluid m-2" data-mdb-ride="carousel">
+  <!-- Carousel wrapper -->
+  <div id="carouselMaterialStyle"
+    class="carousel slide carousel-fade container-fluid m-2"
+    data-mdb-ride="carousel">
     <!-- Indicators -->
     <div class="carousel-indicators">
-      <button type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide-to="0" class="active" aria-current="true"
+      <button type="button" data-mdb-target="#carouselMaterialStyle"
+        data-mdb-slide-to="0" class="active" aria-current="true"
         aria-label="Slide 1"></button>
-      <button type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-mdb-target="#carouselMaterialStyle"
+        data-mdb-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-mdb-target="#carouselMaterialStyle"
+        data-mdb-slide-to="2" aria-label="Slide 3"></button>
     </div>
-  
+
     <!-- Inner -->
-    <div class="carousel-inner rounded-5 shadow-4-strong">
+    <div class="carousel-inner rounded-5 shadow-4-strong ">
       <!-- Single item -->
       <div class="carousel-item active">
         <img src="/static/img/mainCovers/mainCover1.jpg" class="d-block w-100"
           alt="Sunset Over the water" />
       </div>
-  
+
       <!-- Single item -->
       <div class="carousel-item">
         <img src="/static/img/mainCovers/mainCover2.jpg" class="d-block w-100"
           alt="Canyon at Nigh" />
       </div>
-  
+
       <!-- Single item -->
       <div class="carousel-item">
         <img src="/static/img/mainCovers/mainCover3.jpg" class="d-block w-100"
@@ -36,13 +41,15 @@
       </div>
     </div>
     <!-- Inner -->
-  
+
     <!-- Controls -->
-    <button class="carousel-control-prev" type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide="prev">
+    <button class="carousel-control-prev" type="button"
+      data-mdb-target="#carouselMaterialStyle" data-mdb-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide="next">
+    <button class="carousel-control-next" type="button"
+      data-mdb-target="#carouselMaterialStyle" data-mdb-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
@@ -51,11 +58,12 @@
   <!-- Carousel wrapper -->
 
   <!--Start Quote-->
-  <div class="text-center p-3" style="background-color: rgb(255, 255, 255);"> 
-    <h1 class="fst-italic cursive">~Don’t just settle for a pretty picture, make it majestic!~</h1>
+  <div class="text-center p-3" style="background-color: rgb(255, 255, 255);">
+    <h1 class="fst-italic cursive display-1">~Don’t just settle for a pretty
+      picture, make it Majestic!~</h1>
   </div>
   <!--End Quote-->
-<br>
+  <br>
   <!--About layout-->
   <div class="card mb-3 container" style=" ">
     <div class="row g-0">
@@ -63,138 +71,197 @@
         <img
           src="/static/img/rachelleheadshot.jpg"
           alt="Trendy Pants and Shoes"
-          class="img-fluid rounded-start "
-        />
+          class="img-fluid rounded-start " />
       </div>
       <div class="col-md-8">
         <div class="card-body">
           <h5 class="card-title">Ra’chelle Redding</h5>
           <p>Owner/Operator</p>
           <p class="card-text">
-            Hello Friends!  I’m Ra’chelle and I am very passionate about my job as your photographer and I strive to treat each and every session as its own unique experience.  I like to have a one on one consultation with each of my clients so that together we can come up with a vision for your session, bring it to life, and capture it in the most organic and majestic way, to be cherished for years to come.
+            Hello Friends! I’m Ra’chelle and I am very passionate about my job
+            as your photographer and I strive to treat each and every session as
+            its own unique experience. I like to have a one on one consultation
+            with each of my clients so that together we can come up with a
+            vision for your session, bring it to life, and capture it in the
+            most organic and majestic way, to be cherished for years to come.
           </p>
         </div>
       </div>
     </div>
   </div>
   <!--End About layout-->
+
+  <!--Start divider-->
   <br>
-  <!--Start Services Section-->
   <div>
-    <h1 class="cursive text-center">Check out some recent work</h1>
+    <hr class="hr hr-blurry" />
+    <h1 class="cursive text-center">Services</h1>
+    <hr class="hr hr-blurry" />
   </div>
-  <div class="row row-cols-1 row-cols-md-3 g-4">
+  <br>
+  <!--End divider-->
+
+  <!--Start Services Section-->
+  <div class="row row-cols-1 row-cols-md-3 g-4 container-fluid">
     <div class="col">
       <div class="card">
-        <a href="{{url_for('tinyhumans') }}" style="text-decoration: none; color: inherit;">
-          <img src="/static/img/xTinyHumans/cover.jpg" class="card-img-top" alt="baby wrapped in blanket in basket"/>
+        <a class="hover-shadow" href="{{url_for('tinyhumans') }}"
+          style="text-decoration: none; color: inherit;">
+          <img src="/static/img/xTinyHumans/cover.jpg" class="card-img-top">
           <div class="card-body">
-            <h5 class="card-title">Tiny Humans</h5>
-            <p class="card-text">
-              Maternity, Births, Newborns, Babies
-            </p>
+            <h3 class="card-title text-center cursive">Tiny Humans</h3>
           </div>
         </a>
       </div>
     </div>
     <div class="col">
       <div class="card">
-        <img src="/static/img/xFamilyTies/familyTiesCOVER.jpg" class="card-img-top" alt="Palm Springs Road"/>
-        <div class="card-body">
-          <h5 class="card-title">Family Ties</h5>
-          <p class="card-text">
-            Kiddos, Pets, Parents, Siblings, Grands, FAMILY.
-          </p>
-        </div>
+        <a class="hover-shadow" href="{{url_for('familyties') }}"
+          style="text-decoration: none; color: inherit;">
+          <img src="/static/img/xFamilyTies/familyTiesCOVER.jpg"
+            class="card-img-top" alt="Palm Springs Road" />
+          <div class="card-body">
+            <h3 class="card-title text-center cursive">Family Ties</h3>
+          </div>
+        </a>
       </div>
     </div>
     <div class="col">
       <div class="card">
-        <img src="/static/img/xMilestones/cover.jpg" class="card-img-top" alt="Los Angeles Skyscrapers"/>
-        <div class="card-body">
-          <h5 class="card-title">MileStones</h5>
-          <p class="card-text">Graduates, Milestone Birthdays, Life Events</p>
-        </div>
+        <a class="hover-shadow" href="{{url_for('milestones') }}"
+          style="text-decoration: none; color: inherit;">
+          <img src="/static/img/xMilestones/cover.jpg" class="card-img-top" />
+          <div class="card-body">
+            <h3 class="card-title text-center cursive">MileStones</h3>
+          </div>
+        </a>
       </div>
     </div>
     <div class="col">
       <div class="card">
-        <img src="/static/img/xLove&Stuff/COVER.jpg" class="card-img-top" alt="Skyscrapers"/>
-        <div class="card-body">
-          <h5 class="card-title">Love & Stuff</h5>
-          <p class="card-text">
-            Couples, Proposals, Engagements, Anniversaries
-          </p>
+        <a class="hover-shadow" href="{{url_for('lovestuff') }}"
+          style="text-decoration: none; color: inherit;">
+          <img src="/static/img/xLove&Stuff/COVER.jpg" class="card-img-top"
+            alt="Skyscrapers" />
+          <div class="card-body">
+            <h3 class="card-title text-center cursive">Love & Stuff</h3>
+          </div>
         </div>
-      </div>
+      </a>
     </div>
     <div class="col">
-        <div class="card">
-          <img src="/static/img/xYOUniques/cover.jpg" class="card-img-top" alt="Skyscrapers"/>
+      <div class="card">
+        <a class="hover-shadow" href="{{url_for('youniques') }}"
+          style="text-decoration: none; color: inherit;">
+          <img src="/static/img/xYOUniques/cover.jpg" class="card-img-top"
+            alt="Skyscrapers" />
           <div class="card-body">
-            <h5 class="card-title">YOUniques</h5>
-            <p class="card-text">
-                Intimates, Head Shots, Models, Themed Sessions & more
-            </p>
+            <h3 class="card-title text-center cursive">YOUniques</h3>
           </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="/static/img/xMaternity/COVER.jpg" class="card-img-top" alt="Skyscrapers"/>
+      </a>
+    </div>
+    <div class="col">
+      <div class="card">
+        <a class="hover-shadow" href="{{url_for('maternity') }}"
+          style="text-decoration: none; color: inherit;">
+          <img src="/static/img/xMaternity/COVER.jpg"
+            class="card-img-top" alt="Skyscrapers" />
           <div class="card-body">
-            <h5 class="card-title">Maternity</h5>
-            <p class="card-text">
-                Events, Branding, Pets, Fine Art & more
-            </p>
+            <h3 class="card-title text-center cursive">Maternity</h3>
           </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="/static/img/xWeddings/cover.jpg" class="card-img-top" alt="Skyscrapers"/>
+      </a>
+    </div>
+    <div class="col">
+      <div class="card">
+        <a class="hover-shadow" href="{{url_for('weddings') }}"
+          style="text-decoration: none; color: inherit;">
+          <img src="/static/img/xWeddings/cover.jpg"
+            class="card-img-top" alt="Skyscrapers" />
           <div class="card-body">
-            <h5 class="card-title">Weddings</h5>
-            <p class="card-text">
-                All Things Wedding
-            </p>
+            <h3 class="card-title text-center cursive">Weddings</h3>
           </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="/static/img/xHolidaySeasons/holidaySeasonscover.jpg" class="card-img-top" alt="Skyscrapers"/>
+      </a>
+    </div>
+    <div class="col">
+      <div class="card">
+        <a class="hover-shadow"
+          href="{{url_for('holidaysseasons') }}"
+          style="text-decoration: none; color: inherit;">
+          <img
+            src="/static/img/xHolidaySeasons/holidaySeasonscover.jpg"
+            class="card-img-top" alt="Skyscrapers" />
           <div class="card-body">
-            <h5 class="card-title">Holidays & Seasons</h5>
-            <p class="card-text">
-                Christmas, Spring & more
-            </p>
+            <h3 class="card-title text-center  cursive">Holidays & Seasons</h3>
           </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="/static/img/xIntimates/intimatescover.jpg" class="card-img-top" alt="Skyscrapers"/>
-          <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.80)">
-            <div class="d-flex justify-content-center align-items-center h-100">
-              <p class="text-white mb-0">Sensative Content</p>
+      </a>
+    </div>
+    <div class="col">
+      <div class="card">
+        <a class="hover-shadow" href="{{url_for('furbabies') }}"
+          style="text-decoration: none; color: inherit;">
+          <img src="/static/img/xfurbabies/furbabiescover.jpg"
+            class="card-img-top" alt="Skyscrapers" />
+          <div class="card-body">
+            <h3 class="card-title text-center cursive">Furbabies</h3>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <div class="card">
+        <a class="hover-shadow" href="{{url_for('graduates') }}"
+          style="text-decoration: none; color: inherit;">
+          <img src="static/img/xGraduates/gradiatescover.jpg"
+            class="card-img-top" alt="Skyscrapers" />
+          <div class="card-body">
+            <h3 class="card-title text-center cursive">Graduates</h3>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <div class="card">
+        <a class="hover-shadow" href="{{url_for('kiddos') }}"
+          style="text-decoration: none; color: inherit;">
+          <img src="/static/img/xkiddos/kiddoscover.jpg"
+            class="card-img-top" alt="Skyscrapers" />
+          <div class="card-body">
+            <h3 class="card-title text-center cursive">Kiddos</h3>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <div class="card">
+        <a class="hover-shadow"
+          href="{{url_for('intimates') }}"
+          style="text-decoration: none; color: inherit;">
+          <img
+            src="/static/img/xIntimates/intimatescover.jpg"
+            class="card-img-top" alt="Skyscrapers" />
+          <div class="mask"
+            style="background-color: hsla(0, 0%, 0%, 0.80)">
+            <div
+              class="d-flex justify-content-center align-items-center h-100">
+              <p class="text-white mb-0 cursive">Sensative Content</p>
             </div>
           </div>
           <div class="hover-overlay">
-            <div class="mask" style="background-color: hsla(0, 0%,98%, 0.2)"></div>
+            <div class="mask"
+              style="background-color: hsla(0, 0%,98%, 0.2)"></div>
           </div>
           <div class="card-body">
-            <h5 class="card-title">Intimates</h5>
-            <p class="card-text">
-                Product, venu(s), etc.
-            </p>
+            <h3 class="card-title text-center">Intimates</h3>
           </div>
         </div>
-      </div>
+      </a>
+    </div>
   </div>
 
   <!--End Services Section-->
 
-
-    {% endblock %}
-
+  {% endblock %}

@@ -31,9 +31,9 @@ def bookingfee():
 def familyties():
     return render_template('familyties.html')
 
-@app.route('/holidayseasons')
-def holidayseasons():
-    return render_template('holidayseasons.html')
+@app.route('/holidaysseasons')
+def holidaysseasons():
+    return render_template('holidaysseasons.html')
 
 @app.route('/lovestuff')
 def lovestuff():
@@ -58,6 +58,26 @@ def tinyhumans():
 @app.route('/weddings')
 def weddings():
     return render_template('weddings.html')
+
+@app.route('/intimates')
+def intimates():
+    return render_template('intimates.html')
+
+@app.route('/kiddos')
+def kiddos():
+    return render_template('kiddos.html')
+
+@app.route('/graduates')
+def graduates():
+    return render_template('graduates.html')
+
+@app.route('/furbabies')
+def furbabies():
+    return render_template('furbabies.html')
+
+@app.route('/maternity')
+def maternity():
+    return render_template('maternity.html')
 
 @app.errorhandler(404)
 def page_not_found(error):
